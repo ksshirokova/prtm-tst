@@ -1,0 +1,385 @@
+@font-face {
+  font-family: "GothamPro";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/GothamPro-Medium.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "GothamPro";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
+}
+
+body {
+  background-color: #b5bed3;
+  font-family: "GothamPro", "Arial", sans-serif;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+}
+
+.header {
+  border-right: 1px solid #b5bed3;
+  border-left: 1px solid #b5bed3;
+  width: 305px;
+  height: 100vh;
+  z-index: 5;
+  position: fixed;
+  margin-left: 50px;
+}
+@media (max-width: 1200px) {
+  .header {
+    width: 250px;
+  }
+}
+@media (max-width: 760px) {
+  .header {
+    width: 200px;
+  }
+}
+
+.nav-column {
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  font-size: 1.25rem;
+  z-index: 3;
+  top: 35vh;
+  left: 30px;
+  justify-content: center;
+}
+@media (max-width: 760px) {
+  .nav-column {
+    font-size: 15px;
+  }
+}
+
+.nav-row {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%);
+  width: 100%;
+  padding-left: 355px;
+}
+@media (max-width: 1200px) {
+  .nav-row {
+    padding-left: 300px;
+  }
+}
+@media (max-width: 760px) {
+  .nav-row {
+    padding-left: 250px;
+  }
+}
+
+.nav-link {
+  color: white;
+  padding: 0;
+  font-weight: 400;
+}
+
+.link-column {
+  margin: 7.5px 0;
+}
+
+.nav-lang {
+  position: absolute;
+  z-index: 2;
+  font-size: 1.5rem;
+  bottom: 50px;
+  left: 0;
+  color: white;
+  margin-left: 30px;
+  font-size: 1.25rem;
+  line-height: 19px;
+}
+@media (max-width: 720px) {
+  .nav-lang {
+    font-size: 1rem;
+  }
+}
+
+.active {
+  font-weight: 700;
+  color: white;
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: rgba(44, 98, 148, 0.5);
+  z-index: 1;
+  opacity: 0.8;
+}
+
+.solid {
+  display: flex;
+  padding: 40px;
+  background: linear-gradient(to right, #007aff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: all 0.5s ease;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  justify-content: center;
+  
+}
+@media (max-width: 760px) {
+  .solid {
+    font-size: 17px;
+  }
+}
+@media (max-width: 572px) {
+  .solid {
+    font-size: 10px;
+    padding: 20px;
+  }
+}
+
+.solid:hover {
+  background-position: 0 100%;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  right: 0;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+  border-width: 0;
+  outline-width: 0;
+  z-index: 0;
+  line-height: 0;
+  overflow: hidden;
+}
+@media (max-width: 1430px) {
+  .video {
+    width: 1430px;
+    overflow: hidden;
+  }
+}
+
+.logo {
+  background-image: url("https://antenmed.ru/wp-content/themes/antenmed/assets/img/sprite.svg#sprite--logo");
+  color: white;
+  width: 160px;
+  height: 40px;
+  z-index: 30;
+  position: absolute;
+  top: 50px;
+  left: 25px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 760px) {
+  .logo {
+    left: 5px;
+  }
+}
+
+.number {
+  position: absolute;
+  top: 60px;
+  left: 415px;
+  z-index: 3;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 19px;
+  color: white;
+  margin: 0;
+}
+@media (max-width: 875px) {
+  .number {
+    left: 330px;
+  }
+}
+@media (max-width: 790px) {
+  .number {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 720px) {
+  .number {
+    left: 280px;
+  }
+}
+@media (max-width: 655px) {
+  .number {
+    font-size: 0.75rem;
+  }
+}
+
+.description {
+  position: absolute;
+  top: 60px;
+  right: 620px;
+  z-index: 3;
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 135%;
+  color: white;
+  margin: 0;
+  max-width: 230px;
+}
+@media (max-width: 1700px) {
+  .description {
+    right: 220px;
+  }
+}
+@media (max-width: 1600px) {
+  .description {
+    right: 120px;
+  }
+}
+@media (max-width: 1400px) {
+  .description {
+    right: 100px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .description {
+    right: 160px;
+  }
+}
+@media (max-width: 1100px) {
+  .description {
+    right: 80px;
+  }
+}
+@media (max-width: 992px) {
+  .description {
+    right: 80px;
+  }
+}
+@media (max-width: 790px) {
+  .description {
+    font-size: 1rem;
+    right: 30px;
+  }
+}
+@media (max-width: 720px) {
+  .description {
+    right: 15px;
+  }
+}
+@media (max-width: 655px) {
+  .description {
+    font-size: 0.75rem;
+  }
+}
+
+.li-lang {
+  margin-right: 30px;
+}
+
+.main-text {
+  position: absolute;
+  z-index: 3;
+  left: 27%;
+  top: 35vh;
+  font-weight: 700;
+  font-size: 3.75rem;
+  line-height: 0.9;
+  text-transform: uppercase;
+  color: white;
+}
+@media (max-width: 1700px) {
+  .main-text {
+    
+    left: 25%;
+  }
+}
+@media (max-width: 1415px) {
+  .main-text {
+    font-size: 3rem;
+    left: 30%;
+  }
+}
+@media (max-width: 992px) {
+  .main-text {
+    font-size: 2.75rem;
+    left: 35%;
+  }
+}
+@media (max-width: 875px) {
+  .main-text {
+    font-size: 2rem;
+    left: 38%;
+  }
+}
+@media (max-width: 790px) {
+  .main-text {
+    font-size: 1.75rem;
+    left: 40%;
+  }
+}
+@media (max-width: 760px) {
+  .main-text {
+    font-size: 1.5rem;
+    left: 40%;
+  }
+}
+@media (max-width: 655px) {
+  .main-text {
+    font-size: 1rem;
+    left: 40%;
+  }
+}
+@media (max-width: 640px) {
+  .main-text {
+    font-size: 0.75rem;
+    left: 45%;
+  }
+}
+
+.row {
+  flex-direction: column;
+}
+
+.second-paragraph {
+  padding-left: 105px;
+}
+@media (max-width: 640px) {
+  .second-paragraph {
+    padding-left: 55px;
+  }
+}
+.third-paragraph {
+  padding-left: 205px;
+}
+@media (max-width: 640px) {
+  .third-paragraph {
+    padding-left: 100px;
+  }
+}
+.circle {
+  position: absolute;
+  z-index: 3;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  border: 1px solid white;
+  margin: 10px 0 0 -36px;
+}
+
+.paragraph {
+  margin: 0 0 30px 0;
+}
+.paragraph:last-child {
+  margin: 0;
+}
