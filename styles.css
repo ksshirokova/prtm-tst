@@ -12,7 +12,7 @@
   src: url("/fonts/GothamPro-Bold.woff2") format("woff2");
 }
 
-body {
+.root {
   background-color: #b5bed3;
   font-family: "GothamPro", "Arial", sans-serif;
 }
@@ -174,7 +174,7 @@ body {
 }
 
 .logo {
-  background-image: url("https://antenmed.ru/wp-content/themes/antenmed/assets/img/sprite.svg#sprite--logo");
+  background-image: url("https://antenmed.ru/wp-content/themes/antenmed/assets/img/sprite.svg#sprite--logo-blue");
   color: white;
   width: 160px;
   height: 40px;
@@ -226,7 +226,7 @@ body {
 .description {
   position: absolute;
   top: 60px;
-  right: 620px;
+  right: 120px;
   z-index: 3;
   font-weight: 700;
   font-size: 1.25rem;
@@ -235,16 +235,7 @@ body {
   margin: 0;
   max-width: 230px;
 }
-@media (max-width: 1700px) {
-  .description {
-    right: 220px;
-  }
-}
-@media (max-width: 1600px) {
-  .description {
-    right: 120px;
-  }
-}
+
 @media (max-width: 1400px) {
   .description {
     right: 100px;
@@ -378,7 +369,8 @@ body {
 }
 
 .paragraph {
-  margin: 0 0 30px 0;
+  display: inline-block;
+  margin: 0 0 30px;
 }
 .paragraph:last-child {
   margin: 0;
