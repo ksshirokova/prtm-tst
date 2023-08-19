@@ -163,8 +163,8 @@ body {
   border-width: 0;
   outline-width: 0;
   z-index: 0;
-  line-height: 0;
-  overflow: hidden;
+  object-fit: cover;
+  
 }
 @media (max-width: 1430px) {
   .video {
