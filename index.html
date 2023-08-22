@@ -11,10 +11,44 @@
 </head>
 
 <body class="root">
-  <div class="mobile-header">
-    <a href="https://antenmed.ru"><div class="logo"></div></a>
+  <div class="mobile-header bottom-border">
+      <a href="https://antenmed.ru">
+        <div class="logo"></div>
+      </a>
     <button class="burger-icon"></button>
+    <button class="close-icon hidden"></button>
   </div>
+  <aside class="mobile-header-menu">
+    <nav class="nav nav-mobile">
+      
+      <a class="nav-link link-mobile" href="#">
+        Решения <button class="plus-icon"></button>
+      </a>
+      <a class="nav-link link-mobile" href="#">
+        Услуги <button class="plus-icon"></button>
+      </a>
+      <a class="nav-link link-mobile" href="#">
+        Проекты
+      </a>
+      <a class="nav-link link-mobile" aria-current="page" href="#">
+        Компания <button class="plus-icon"></button>
+      </a>
+      <a class="nav-link link-mobile" href="#">
+       Социальные проекты
+      </a>
+      <a class="nav-link link-mobile" href="#">
+        Контактная информация
+      </a>
+    </nav>
+    <div class="description-container">
+      <a href="tel:88002007597" class="mobile-text"> 8 800 200 75 97 </a>
+      <a href="mailto:88002007597" class="mobile-text">info@antenmed.ru</a>
+      <button class="call-button">Обратный звонок</button>
+      <p class="mobile-time"> Режим работы: Пн-Пт с 09:00-18:00 (мск)</p>
+    </div>
+  </aside>
+
+
 
   <header class="header-block">
     <a href="tel:88002007597" class="number"> 8 800 200 75 97 </a>
@@ -46,6 +80,7 @@
         <div class="circle"></div>Форма связи
       </a>
     </nav>
+
     <ul class="nav nav-lang">
       <li class="nav-item li-lang">
         <a class="nav-link active" aria-current="page" href="#">RU</a>
@@ -55,6 +90,7 @@
       </li>
     </ul>
   </aside>
+
   <main class="main">
     <h1 class="main-text">
       <span class="paragraph">медицинское</span><br>
@@ -81,20 +117,25 @@
       </ul>
     </nav>
     <div class="circle-container">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="button-circle"> <path d="M19 14L12 21M12 21L5 14M12 21V3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </svg>
-  </div>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+        class="button-circle">
+        <path d="M19 14L12 21M12 21L5 14M12 21V3" stroke="white" stroke-width="2" stroke-linecap="round"
+          stroke-linejoin="round"></path>
+      </svg>
+    </div>
   </main>
   <div class="overlay">
   </div>
   <div class="video-container">
     <video src="https://antenmed.ru/wp-content/themes/antenmed/assets/data/videos/company.mp4" loop muted autoplay
-    data-idx="1" class="video"></video>
+      data-idx="1" class="video"></video>
   </div>
-  
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
     crossorigin="anonymous"></script>
   <script src="./styles.css"></script>
+  <script src="./index.js"></script>
 </body>
 
 </html>
